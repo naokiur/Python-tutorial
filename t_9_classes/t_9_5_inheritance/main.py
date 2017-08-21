@@ -1,18 +1,22 @@
 class Animal:
-    def __init__(self):
-        pass
+    def __init__(self, name):
+        self.name = name
 
     def bow(self):
-        print('bow!!')
+        print(self.name, 'bow!!')
 
 
 class Dog(Animal):
     def bite(self):
-        print('bite!!')
+        print(self.name, 'bite!!')
 
-animal = Animal()
-dog = Dog()
+animal = Animal('animal')
+dog = Dog('dog')
 
 animal.bow()
 dog.bow()
 dog.bite()
+
+print(isinstance(animal, Animal))
+print(isinstance(dog, Animal))
+print(issubclass(Dog, Animal))
