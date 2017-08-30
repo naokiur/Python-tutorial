@@ -23,6 +23,7 @@ print(next(it))
 print(next(it))
 # print(next(it)) This will be StopIteration.
 
+
 class Reverse:
     """Iterator for looping over a sequence back words"""
     def __init__(self, data):
